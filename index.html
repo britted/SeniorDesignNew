@@ -15,6 +15,7 @@
 	    <link href="css/bootstrap.min.css" rel="stylesheet">
 	    <!-- Custom -->
 	    <link href="css/custom.css" rel="stylesheet">
+	   <link href='http://fonts.googleapis.com/css?family=Armata|Oxygen' rel='stylesheet' type='text/css'>
 	<!-- included from initial example -->
 	    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,34 +40,10 @@
 			body {
 				height: auto;
 		  	-webkit-text-size-adjust:none;
-		  	font-family:Helvetica, Arial, Verdana, sans-serif;
+		  	font-family: 'Oxygen', sans-serif;
 		  	padding:0px;
 				overflow-x: hidden;	
 				background-color: white;	
-			}		
-			
-			
-			.box {
-				position: relative;
-				float: left;
-				width: 45%;
-				padding: 7px;
-				border: 1px solid rgba(255, 255, 255, 0.6);
-				background: rgba(178,215,255,0.75);
-				min-height: 160px;
-			}	
-			
-			.box2 {
-				position: relative;
-				float: left;
-				width: 45%;
-				padding: 7px;
-				border: 1px solid rgba(255, 255, 255, 0.6);
-				background: rgba(178,215,255,0.75);
-			}	
-			
-			.box span {
-				display: block;
 			}
 			
 			span.head {
@@ -84,7 +61,45 @@
 			}
 			#head .container-fluid .jumbotron{
 				height: 95vh;
-				background-size:cover;
+				background-color: #093B3C;
+				}	
+			#head .help-block {
+			  color: white;
+			}
+			.jumbotron .h1, .jumbotron h1{
+				font-family: 'Armata', sans-serif;
+				color: white;
+			}
+			#aboutUs .container-fluid .jumbotron{
+				background-color: #6B9068;
+				}
+			#specs .container-fluid .jumbotron{
+				background-color: #146C5C;
+				}
+			#contact .container-fluid .jumbotron{
+				background-color: #5B988D;
+			}
+			.h2, h2{
+				color:#333333;
+				font-family: 'Armata', sans-serif;
+			}
+			.help-block {
+			  display: block;
+			  margin-top: 5px;
+			  color: #333333;
+			}
+			.btn-primary {
+				background-color: #5B988D;
+				border-color:#5B988D;
+				font-family: 'Armata', sans-serif;
+			}
+			.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+			  background-color: black;
+			  border-color: black;
+			}
+			.navbar-default {
+			  background-color: white;
+			  border-color: white;
 			}
 		
 		}
@@ -130,7 +145,7 @@
 	          <br> &nbsp
 	          <br> &nbsp
 	          <h1>Welcome</h1>
-	          <p> Our project design will enhance doctor-patient relationships 
+	          <p class="help-block"> Our project design will enhance doctor-patient relationships 
 	          	<br>by allowing rehab exercises to be viewed by patients as they do them, 
 	          	<br> and have the info stored for the doctor's viewing.
 	          <br> &nbsp
@@ -232,8 +247,7 @@
 		    <div class = "container-fluid">
 		      <div class = "row">
 		        <div class = "jumbotron">
-		          <br>&nbsp
-		          <h2>Contact Us</h2> 
+		          <h1>Contact Us</h1> 
 		          <p>Feel free to contact us for more information about our project, or if you would like to work with us!</p>
 		          <!-- will be on the bottom right -->
 		        </div>
